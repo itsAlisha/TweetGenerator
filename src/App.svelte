@@ -1,4 +1,3 @@
-```
 <script>
   let pagetitle = "How it Works";
   let steps = [
@@ -7,7 +6,7 @@
         "Create fake tweets that are indistinguishable from the real ones.",
       content:
         "Whether you want to pull a prank or see what it feels like when you get a million views on your tweet, our fake tweet creator is here to help.",
-      image: "../static/Burger.png",
+      image: "/static/Burger.png",
       alignLeft: true,
     },
     {
@@ -15,14 +14,14 @@
         "Customize your tweet with any profile pic, handle, text and media",
       content:
         "Personalize your tweet with any profile picture, username, and content. Our intuitive generator lets you craft tweets as if they were posted from any account.",
-      image: "../static/elonmusk.png",
+      image: "/static/elonmusk.png",
       alignLeft: false,
     },
     {
       title: "Simulate Engagement",
       content:
         "Add elements like likes, retweets, quote tweets, bookmarks, and views to make your tweet look authentic.",
-      image: "../static/engage.svg",
+      image: "/static/engage.svg",
       alignLeft: true,
     },
   ];
@@ -104,7 +103,7 @@
       </div>
       <div class="image-container">
         <img
-          src="../static/tweets.png"
+          src="/static/tweets.png"
           alt="AI Twitter Tool"
           class="rounded-lg shadow-md"
         />
@@ -210,4 +209,3 @@
     align-items: center;
   }
 </style>
-```
