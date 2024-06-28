@@ -6,7 +6,7 @@
         "Create fake tweets that are indistinguishable from the real ones.",
       content:
         "Whether you want to pull a prank or see what it feels like when you get a million views on your tweet, our fake tweet creator is here to help.",
-      image: "Burger.png",
+      image: "/Burger.png",
       alignLeft: true,
     },
     {
