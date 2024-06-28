@@ -1,3 +1,4 @@
+```
 <script>
   let pagetitle = "How it Works";
   let steps = [
@@ -209,3 +210,4 @@
     align-items: center;
   }
 </style>
+```
