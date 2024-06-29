@@ -14,14 +14,14 @@
         "Customize your tweet with any profile pic, handle, text and media",
       content:
         "Personalize your tweet with any profile picture, username, and content. Our intuitive generator lets you craft tweets as if they were posted from any account.",
-      image: "/static/elonmusk.png",
+      image: "/elonmusk.png",
       alignLeft: false,
     },
     {
       title: "Simulate Engagement",
       content:
         "Add elements like likes, retweets, quote tweets, bookmarks, and views to make your tweet look authentic.",
-      image: "/static/engage.svg",
+      image: "/engage.svg",
       alignLeft: true,
     },
   ];
@@ -103,7 +103,7 @@
       </div>
       <div class="image-container">
         <img
-          src="/static/tweets.png"
+          src="/tweets.png"
           alt="AI Twitter Tool"
           class="rounded-lg shadow-md"
         />
