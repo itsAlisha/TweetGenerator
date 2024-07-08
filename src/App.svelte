@@ -1291,7 +1291,9 @@
       </div>
     </div>
   </div>
-
+  <div class="copyright">
+    <p>&copy Realistic Tweet Generator 2024</p>
+  </div>
   <!--container-->
 </div>
 
@@ -1914,5 +1916,13 @@
       border-bottom-right-radius: 15px;
       max-width: 100vw;
     }
+  }
+.copyright {
+    background-color: #1a202c;
+    color: white;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
   }
 </style>
