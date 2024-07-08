@@ -457,7 +457,8 @@
     rel="stylesheet"
   />
 </head>
-<div class="card rounded-2xl">
+
+<div class="card">
   <div class="tweet-section">
     <div class="container">
       <div class="side-container">
@@ -909,15 +910,25 @@
                           >
                             {tweetTitle}
                           </span>
-
                           <button
                             type="button"
-                            class="no-button"
+                            class="logo-button no-border"
                             id="menu-button"
                             aria-expanded="false"
                             aria-haspopup="menu"
                             aria-controls="menu-list"
                           >
+                            <svg
+                              fill="#3c9aff"
+                              viewBox="0 0 22 22"
+                              focusable="false"
+                              class="chakra-icon"
+                              aria-hidden="true"
+                            >
+                              <path
+                                d="M20.396 11a3.487 3.487 0 00-2.008-3.062 3.474 3.474 0 00-.742-3.584 3.474 3.474 0 00-3.584-.742A3.468 3.468 0 0011 1.604a3.463 3.463 0 00-3.053 2.008 3.472 3.472 0 00-1.902-.14c-.635.13-1.22.436-1.69.882a3.461 3.461 0 00-.734 3.584A3.49 3.49 0 001.604 11a3.496 3.496 0 002.017 3.062 3.471 3.471 0 00.733 3.584 3.49 3.49 0 003.584.742A3.487 3.487 0 0011 20.396a3.476 3.476 0 003.062-2.007 3.335 3.335 0 004.326-4.327A3.487 3.487 0 0020.396 11zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"
+                              ></path>
+                            </svg>
                           </button>
                         </div>
                         <div class="tweet-editable">
@@ -1285,6 +1296,9 @@
 </div>
 
 <style>
+  .card {
+    border-radius: 15px;
+  }
   .disabled {
     pointer-events: none;
     opacity: 0.5;
@@ -1461,8 +1475,11 @@
     justify-content: space-between;
     height: 100%;
   }
-
+  .container {
+    border-top-left-radius: 15px;
+  }
   .right-container {
+    border-top-right-radius: 15px;
     background-color: #edf2f7;
     box-shadow: -10px 0px 10px -10px rgba(0, 0, 0, 0.153);
   }
@@ -1510,19 +1527,7 @@
     display: flex;
     align-items: center;
   }
-  .no-button {
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    background: none;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-  }
+
   .theme-option,
   .button-copy {
     border: 1px solid #e6e8eb;
@@ -1725,21 +1730,18 @@
     cursor: pointer;
     border: 2px dashed lightgrey;
   }
-
+  .no-border {
+    border: 0px;
+  }
   .logo-button svg {
     width: 20px;
     height: 20px;
   }
-  .no-button svg {
-    width: 20px;
-    height: 20px;
-  }
+
   .logo-button:hover {
     background-color: #efefef;
   }
-  .no-button:hover {
-    background-color: transparent;
-  }
+
   .twitter-header,
   .gen-header {
     display: flex;
@@ -1882,6 +1884,8 @@
       min-width: 100vh;
     }
     .card-doc {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
       display: grid;
       gap: 0;
       height: auto;
@@ -1896,11 +1900,18 @@
 
     .container,
     .right-container {
+      border-top-right-radius: 0px;
       width: 100%;
       max-width: 100%;
       padding: 10px;
     }
+    .container {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
     .card-doc {
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
       max-width: 100vw;
     }
   }
