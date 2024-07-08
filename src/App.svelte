@@ -457,7 +457,7 @@
     rel="stylesheet"
   />
 </head>
-<div class="card rounded-lg">
+<div class="card rounded-2xl">
   <div class="tweet-section">
     <div class="container">
       <div class="side-container">
@@ -484,7 +484,7 @@
           <span class="title-head">CraftLab Tweet Generator</span>
         </div>
         <div class="description">
-          <h1 class="">Tweet Generator</h1>
+          <h1 class="ml-4">Tweet Generator</h1>
           <p class="chakra-text-2">
             Generate mock screenshots of tweets easily.
           </p>
@@ -1218,14 +1218,14 @@
   </div>
   <div class="card-doc bg-white">
     <div class="card-doc-section">
-      <h1 class="text-3xl font-bold mb-10 text-center">{pagetitle}</h1>
+      <h1 class="text-3xl font-bold mb-10 mt-10 text-center">{pagetitle}</h1>
       <div class="documentation">
         {#each steps as { title, content, image, alignLeft }, i}
           <div class="step {alignLeft ? 'left-align' : 'right-align'}">
             {#if alignLeft}
               <div class="text-content">
-                <h2 class="text-2xl font-semibold mb-4">{title}</h2>
-                <h3 class="text-lg mb-6">{content}</h3>
+                <h2 class="text-2xl font-semibold mb-4 ml-10">{title}</h2>
+                <h3 class="text-lg mb-6 ml-10">{content}</h3>
               </div>
               <div class="image-container">
                 <img src={image} alt="Burger Illustration" />
@@ -1235,8 +1235,8 @@
                 <img src={image} alt="Elon musk illustration" />
               </div>
               <div class="text-content">
-                <h2 class="text-2xl font-semibold mb-4">{title}</h2>
-                <h3 class="text-lg mb-6">{content}</h3>
+                <h2 class="text-2xl font-semibold mb-4 ml-7">{title}</h2>
+                <h3 class="text-lg mb-6 ml-7 mr-10">{content}</h3>
               </div>
             {/if}
           </div>
@@ -1244,14 +1244,14 @@
 
         <div class="dark-frame">
           <div class="enhance-twitter-section">
-            <h3 class="text-2xl font-semibold my-4 text-white">
+            <h3 class="text-2xl font-bold my-4 ml-5 text-white">
               Enhance Your Twitter Presence
             </h3>
-            <p class="text-lg mb-4 text-white">
+            <p class="text-lg mb-4 mr-5 text-white">
               Discover our AI-powered suite of tools designed to supercharge
               your Twitter growth.
             </p>
-            <ul class="list-disc list-inside text-lg mb-6">
+            <ul class="list-disc list-inside text-lg mb-6 font-semibold">
               {#each enhancesteps[0].additional as item}
                 <li id="item" class="text-white">{item}</li>
               {/each}
@@ -1267,11 +1267,13 @@
         </div>
 
         <div class="faq-section mt-8">
-          <h3 class="text-2xl font-bold mb-6">Frequently Asked Questions</h3>
+          <h3 class="text-3xl font-bold mb-8 text-center">
+            Frequently Asked Questions
+          </h3>
           {#each faqItems as { question, answer }}
             <div class="mb-6">
-              <h4 class="text-xl font-medium mb-1">{question}</h4>
-              <p class="text-sm mb-4">{answer}</p>
+              <h4 class="text-xl font-medium mb-1 ml-5 mr-10">{question}</h4>
+              <p class="text-md mb-10">{answer}</p>
             </div>
           {/each}
         </div>
@@ -1414,6 +1416,7 @@
     margin: 0 auto;
     margin-bottom: 20px;
     color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   .image-container {
     flex-shrink: 0;
@@ -1426,8 +1429,9 @@
   }
   .faq-section {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 40px 100px 20px;
     text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   h2,
   h4 {
